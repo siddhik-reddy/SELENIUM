@@ -5,9 +5,19 @@ driver = webdriver.Chrome()  # use the Chrome to open the web ie other browsers 
 
 driver.get('www.google.com')  # the web site where the actions needed to be done
 
-driver.sleep(5)  # Time that the action needed to be in 'sec'
+time.sleep(5)  # Time that the action needed to be in 'sec'
 
 driver.quit()  # exit the web after the time ends ie 5 sec 
 
 
+______________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+
+from selenium.webdriver.common.by import By   # used to find the elements more effective the the old way
+
+element =  driver.find(By.CLASS_NAME, 'information')  # search for the class name from the web and return the data
+time.sleep(5)
+
+driver.quit()
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________
