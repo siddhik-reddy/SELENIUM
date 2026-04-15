@@ -1,0 +1,13 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome()  # use the Chrome to open the web ie other browsers can be also used
+
+driver.get('www.google.com')  # the web site where the actions needed to be done
+
+driver.sleep(5)  # Time that the action needed to be in 'sec'
+
+driver.quit()  # exit the web after the time ends ie 5 sec 
+
+
+
